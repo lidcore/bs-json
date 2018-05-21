@@ -1,0 +1,22 @@
+{
+  "name": "bs-json",
+  "namespace": true,
+  "sources": [
+    "src",
+    {
+      "dir": "tests",
+      "type": "dev"
+    }
+  ],
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
+  "bs-dev-dependencies": [
+    "bs-tape"
+  ],
+  "bsc-flags": [
+    "-bs-super-errors"
+  ],
+  "refmt": 3,
+}
