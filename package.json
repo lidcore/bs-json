@@ -1,6 +1,6 @@
 {
   "name": "@lidcore/bs-json",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Generic JSON parsing for bucklescript applications",
   "main": "lib/js/src/json.js",
   "scripts": {
@@ -16,16 +16,12 @@
   "bugs": {
     "url": "https://github.com/lidcore/bs-json/issues"
   },
-  "keywords": [
-    "bucklescript",
-    "parsing",
-    "json"
-  ],
+  "keywords": ["bucklescript", "parsing", "json"],
   "peerDependencies": {
-    "bs-platform": "^3.0.0"
+    "bs-platform": "^3.1.0"
   },
   "devDependencies": {
-    "bs-platform": "^3.0.0",
+    "bs-platform": "^3.1.0",
     "bs-tape": "^0.3.0"
   },
   "author": "Lidcore IT <it@lidcore.com>",
