@@ -1,11 +1,11 @@
 {
   "name": "@lidcore/bs-json",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Generic JSON parsing for bucklescript applications",
   "main": "lib/js/src/json.js",
   "scripts": {
     "build": "bsb -make-world",
-    "watch": "bsb -make-world -w",
+    "start": "bsb -make-world -w",
     "clean": "bsb -clean-world",
     "test": "npm run build && tape tests/*.js"
   },

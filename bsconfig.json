@@ -1,5 +1,5 @@
 {
-  "name": "bs-json",
+  "name": "@lidcore/bs-json",
   "namespace": true,
   "sources": [
     "src",
@@ -12,11 +12,7 @@
     "module": "commonjs",
     "in-source": true
   },
-  "bs-dev-dependencies": [
-    "bs-tape"
-  ],
-  "bsc-flags": [
-    "-bs-super-errors"
-  ],
-  "refmt": 3,
+  "bs-dev-dependencies": ["bs-tape"],
+  "bsc-flags": ["-bs-super-errors"],
+  "refmt": 3
 }

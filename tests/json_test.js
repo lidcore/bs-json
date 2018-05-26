@@ -4,7 +4,7 @@
 var Tape = require("bs-tape/src/Tape.bs.js");
 var Curry = require("bs-platform/lib/js/curry.js");
 var Caml_obj = require("bs-platform/lib/js/caml_obj.js");
-var Json$BsJson = require("../src/json.js");
+var Json$LidcoreBsJson = require("../src/json.js");
 
 Tape.test("Parsing", (function (t) {
         var obj = /* `Object */[
@@ -21,13 +21,13 @@ Tape.test("Parsing", (function (t) {
           ]
         ];
         Curry._1(t[/* plan */0], 5);
-        Curry._2(t[/* ok */7], /* None */0, Caml_obj.caml_equal(obj, Json$BsJson.parse("{\"foo\":123.4}")));
-        Curry._2(t[/* ok */7], /* None */0, Caml_obj.caml_equal(obj, Json$BsJson.parse(Json$BsJson.stringify(obj))));
+        Curry._2(t[/* ok */7], /* None */0, Caml_obj.caml_equal(obj, Json$LidcoreBsJson.parse("{\"foo\":123.4}")));
+        Curry._2(t[/* ok */7], /* None */0, Caml_obj.caml_equal(obj, Json$LidcoreBsJson.parse(Json$LidcoreBsJson.stringify(obj))));
         Curry._2(t[/* ok */7], /* None */0, Caml_obj.caml_equal(/* `String */[
                   -976970511,
                   "aabbcc"
-                ], Json$BsJson.parse("\"aabbcc\"")));
-        Curry._2(t[/* ok */7], /* None */0, "\"aabbcc\"" === Json$BsJson.stringify(/* `String */[
+                ], Json$LidcoreBsJson.parse("\"aabbcc\"")));
+        Curry._2(t[/* ok */7], /* None */0, "\"aabbcc\"" === Json$LidcoreBsJson.stringify(/* `String */[
                   -976970511,
                   "aabbcc"
                 ]));
@@ -44,7 +44,7 @@ Tape.test("Parsing", (function (t) {
                           ],
                           /* Null */870828711
                         ]
-                      ], Json$BsJson.parse("[1,\"foo\",null]")));
+                      ], Json$LidcoreBsJson.parse("[1,\"foo\",null]")));
       }));
 
 /*  Not a pure module */
